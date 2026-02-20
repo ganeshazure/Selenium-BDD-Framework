@@ -1,6 +1,8 @@
 package StepDefinitions;
 
 import io.cucumber.java.en.*;
+import utils.DriverFactory;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,10 +12,11 @@ import PageObjects.RegisterPage;
 public class RegisterSteps {
    // WebDriver driver = DriverFactory.getDriver();
     RegisterPage registerPage;
-    WebDriver driver;
+    WebDriver driver = DriverFactory.getDriver();
     @Given("I open the registration page")
     public void openRegistrationPage() {
-    	driver = new ChromeDriver();
+    	//System.out.println("testing started");
+    	//driver = new ChromeDriver();
         driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");
         registerPage = new RegisterPage(driver);
     }

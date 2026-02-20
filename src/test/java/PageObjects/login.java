@@ -19,7 +19,7 @@ import org.openqa.selenium.WebDriver;
 		PageFactory.initElements(driver,this);
   }
   
-  @FindBy(xpath="//input[@id='input-email']")
+  @FindBy(xpath="//input[@id='input-em']")
   @CacheLookup
   WebElement inputUsername;
   

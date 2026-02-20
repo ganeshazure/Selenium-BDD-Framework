@@ -35,8 +35,8 @@ public class Reg_new {
     	registerPage= new reg_new(driver);
         driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");
         driver.manage().window().maximize();
-        //List<String> data = dataTable.row(0);
-        List<String> data = dataTable.asLists().get(0);
+        List<String> data = dataTable.row(0);
+        //List<List<String>> data = dataTable.asLists();
 
         registerPage.enterDetailsList(data);
     }
@@ -59,7 +59,7 @@ public class Reg_new {
         driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");
         driver.manage().window().maximize();
         
-        List<Map<String, String>> maps = dataTable.asMaps(String.class, String.class);
+        List<Map<String, String>> maps = dataTable.asMaps();
         for (Map<String, String> user : maps) {
             registerPage.enterDetailsMap(user);
             registerPage.selectSubscribe("No");

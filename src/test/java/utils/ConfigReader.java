@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 	
-	public Properties intializeProperties() {
+	public static Properties intializeProperties() {
 		
 		Properties prop = new Properties();
 		File proFile = new File(System.getProperty("user.dir")+"\\src\\main\\resources\\config\\config.properties");

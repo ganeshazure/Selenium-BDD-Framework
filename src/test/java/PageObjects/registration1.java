@@ -3,6 +3,7 @@ package PageObjects;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class registration1 {
@@ -45,6 +46,8 @@ public class registration1 {
 
     // Actions/Methods for the form fields
     public void enterFirstName(String fName) {
+    	//driver.findelement(By.id(fName)
+    	//sendkeys("ganesh"));
         firstName.sendKeys(fName);
     }
 

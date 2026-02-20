@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 18, 2025 04:39:36 pm</span></a>
+<a href="#"><span class="badge badge-primary">Feb 20, 2026 12:01:07 pm</span></a>
 </li>
 </ul>
 </div>
@@ -57,11 +57,6 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
-</a>
-</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -71,25 +66,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 18, 2025 04:39:36 pm</h3>
+<h3>Feb 20, 2026 12:01:07 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 18, 2025 04:43:35 pm</h3>
+<h3>Feb 20, 2026 12:02:16 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>2</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -105,12 +100,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>2</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -128,9 +123,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='66%'><b>4</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='33%'><b>2</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -148,10 +143,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='62%'><b>17</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>22</b> steps passed</small></div>
 <div>
-<small data-tooltip='7%'><b>2</b> steps failed,
-<b>8</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -167,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"User Registration on TutorialsNinja":235.601,"login":2.367
+"User Registration on TutorialsNinja":68.091
 };
 </script>
 <div class="row">
@@ -178,19 +173,11 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@reg_new</td>
-<td>4</td>
-<td>2</td>
+<td>6</td>
 <td>0</td>
 <td>0</td>
-<td>66.667%</td>
-</tr>
-<tr>
-<td>@logintest</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -201,21 +188,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 2,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 4,
-failChild: 2,
+passChild: 5,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 17,
-failGrandChild: 2,
+passGrandChild: 22,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 8,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -229,7 +216,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -237,31 +224,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@reg_new</a><a class="dropdown-item" href="#">@logintest</a>
+<a class="dropdown-item" href="#">@reg_new</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">User Registration on TutorialsNinja</p>
             <p class="text-sm">
-              <span>4:39:37 pm</span> / <span>00:03:55:601</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>12:01:08 pm</span> / <span>00:01:08:091</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">User Registration on TutorialsNinja</h5>
-<span class='badge badge-success'>12.18.2025 4:39:37 pm</span>
-<span class='badge badge-danger'>12.18.2025 4:43:33 pm</span>
-<span class='badge badge-default'>00:03:55:601</span>
+<h5 class="test-status text-pass">User Registration on TutorialsNinja</h5>
+<span class='badge badge-success'>02.20.2026 12:01:08 pm</span>
+<span class='badge badge-danger'>02.20.2026 12:02:16 pm</span>
+<span class='badge badge-default'>00:01:08:091</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -312,7 +299,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Register with valid data using Map</div>
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>Register with valid data using Map</div>
       </div>
     </div>
         <div class="collapse">
@@ -350,7 +337,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Register multiple users using Maps</div>
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>Register multiple users using Maps</div>
       </div>
     </div>
         <div class="collapse">
@@ -373,14 +360,14 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>Register with different data</div>
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Register with different data</div>
       </div>
     </div>
-        <div class="scenario_outline ">
+        <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Register with different data</div>
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Register with different data</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
@@ -414,199 +401,37 @@ eventsCount: 5,
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="28"><span class="badge log fail-bg mr-2">Fail</span>Register with different data</div>
+                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>Register with different data</div>
                 </div>
               </div>
-              <div class="card-body mt-3 ">
-                  <div class="step fail-bg">
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
                     <span>When User enters "Latha", "Devi", "latha@test.com", "9865432109", "pass222", "pass222"</span>
       <div>
-        <textarea disabled class="code-block">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
-Host info: host: 'GANESH', ip: '192.168.1.101'
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
-	at StepDefinitions.Reg_new.user_enters_details(Reg_new.java:74)
-	at ✽.User enters "Latha", "Devi", "latha@test.com", "9865432109", "pass222", "pass222"(file:///C:/Users/LENOVO/eclipse-workspace/BddTest/src/test/resources/features/datatable_scenario_outline.feature:38)
-Caused by: org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:65)
-	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
-	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
-	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:159)
-	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:108)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
-	at StepDefinitions.Reg_new.user_enters_details(Reg_new.java:74)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:151)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:151)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.util.concurrent.TimeoutException
-	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
-	at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
-	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
-	... 66 more
-</textarea>
-      
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And User selects Subscribe as "Yes"</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And User accepts the Privacy Policy</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>And User clicks on Continue</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
-                  <div class="step skip-bg">
+                  <div class="step pass-bg">
                     <span>Then Registration should be successful</span>
-      <div>Step skipped
+      <div>
       </div>
                   </div>
               </div>
             </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="fail" test-id="35"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">login</p>
-            <p class="text-sm">
-              <span>4:43:33 pm</span> / <span>00:00:02:367</span>
-              <span class="badge fail-bg log float-right">Fail</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-fail">login</h5>
-<span class='badge badge-success'>12.18.2025 4:43:33 pm</span>
-<span class='badge badge-danger'>12.18.2025 4:43:35 pm</span>
-<span class='badge badge-default'>00:00:02:367</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5"></div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="36"><span class="badge log fail-bg mr-2">Fail</span>Validating the Login functionality with valid credentials</div>
-      </div>
-    </div>
-        <div class="">
-          <div class="card-body">
-              <div class="step fail-bg" title="StepDefinitions.LoginSteps.user_is_on_the_login_page()">
-                <span>Given User is on the login page</span>
-      <div>
-        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-	at StepDefinitions.LoginSteps.user_is_on_the_login_page(LoginSteps.java:24)
-	at ✽.User is on the login page(file:///C:/Users/LENOVO/eclipse-workspace/BddTest/src/test/resources/features/login.feature:5)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.LoginSteps.user_enter_email_into_email_filed(java.lang.String)">
-                <span>When user enter email "ganesh@gmail.com" into Email filed</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.LoginSteps.user_enter_password_into_password_field(java.lang.String)">
-                <span>And user enter password "gani@123" into Password field</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.LoginSteps.user_clicks_on_login_button()">
-                <span>And user clicks on login button</span>
-      <div>Step skipped
-      </div>
-              </div>
-              <div class="step skip-bg" title="StepDefinitions.LoginSteps.user_should_see_the_home_page_on_successful_login()">
-                <span>Then User should see the Home page on successful login</span>
-      <div>Step skipped
-      </div>
-              </div>
-          </div>
         </div>
   </div>
 </div>
@@ -625,15 +450,14 @@ Caused by: java.util.concurrent.TimeoutException
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>4</span>
-<span class='badge log badge-danger'>2</span>
+<span class='badge log pass-bg'>6</span>
 </span>
 <p class="name">@reg_new</p>
 <p class="duration text-sm">6 tests</p>
@@ -641,8 +465,7 @@ Caused by: java.util.concurrent.TimeoutException
 <div class="test-contents d-none">
 <div class="info">
 <h4>@reg_new</h4>
-<span status="pass" class='badge log pass-bg'>4 passed</span>
-<span status="fail" class='badge log badge-danger'>2 failed</span>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -655,7 +478,7 @@ Caused by: java.util.concurrent.TimeoutException
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:39:37 pm</td>
+<td>12:01:08 pm</td>
 <td>
 <a href="#" class="linked" test-id='1' id='2'>Register with valid data using List</a>
 <div class="">
@@ -665,9 +488,9 @@ Caused by: java.util.concurrent.TimeoutException
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:39:54 pm</td>
+<td>12:01:26 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='9'>Register with valid data using Map</a>
+<a href="#" class="linked" test-id='1' id='10'>Register with valid data using Map</a>
 <div class="">
 <span class="badge badge-default">User Registration on TutorialsNinja.Register with valid data using Map</span>
 </div>
@@ -675,19 +498,19 @@ Caused by: java.util.concurrent.TimeoutException
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:40:05 pm</td>
+<td>12:01:38 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='16'>Register multiple users using Maps</a>
+<a href="#" class="linked" test-id='1' id='18'>Register multiple users using Maps</a>
 <div class="">
 <span class="badge badge-default">User Registration on TutorialsNinja.Register multiple users using Maps</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:40:17 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:01:52 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='20'>Register with different data</a>
+<a href="#" class="linked" test-id='1' id='23'>Register with different data</a>
 <div class="">
 <span class="badge badge-default">User Registration on TutorialsNinja.Register with different data</span>
 </div>
@@ -695,145 +518,21 @@ Caused by: java.util.concurrent.TimeoutException
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>16:40:17 pm</td>
+<td>12:01:52 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='21'>Register with different data</a>
+<a href="#" class="linked" test-id='1' id='24'>Register with different data</a>
 <div class="">
 <span class="badge badge-default">User Registration on TutorialsNinja.Register with different data</span>
 </div>
 </td>
 </tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:40:28 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>12:02:04 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='28'>Register with different data</a>
+<a href="#" class="linked" test-id='1' id='32'>Register with different data</a>
 <div class="">
 <span class="badge badge-default">User Registration on TutorialsNinja.Register with different data</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@logintest</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@logintest</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:43:33 pm</td>
-<td>
-<a href="#" class="linked" test-id='35' id='36'>Validating the Login functionality with valid credentials</a>
-<div class="">
-<span class="badge badge-default">login.Validating the Login functionality with valid credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">java.lang.NullPointerException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>java.lang.NullPointerException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:43:35 pm</td>
-<td>
-<a href="#" class="linked" test-id='35' id='38'>Given User is on the login page</a>
-<div class="">
-<span class="badge badge-default">login.Validating the Login functionality with valid credentials.Given User is on the login page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.SessionNotCreatedException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.SessionNotCreatedException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>16:40:31 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='30'>When User enters "Latha", "Devi", "latha@test.com", "9865432109", "pass222", "pass222"</a>
-<div class="">
-<span class="badge badge-default">User Registration on TutorialsNinja.Register with different data.When User enters "Latha", "Devi", "latha@test.com", "9865432109", "pass222", "pass222"</span>
 </div>
 </td>
 </tr>

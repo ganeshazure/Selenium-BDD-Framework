@@ -1,9 +1,11 @@
 @logitest
 Feature: User Login
+#what functionality is being tested
 
   Scenario: Successful login with valid credentials
     Given the user navigates to the login page
     When the user enters a valid email and password
+    And user clicks on login button
     Then the user should be logged in and redirected to the homepage
     
     Scenario: Login with an unregistered email

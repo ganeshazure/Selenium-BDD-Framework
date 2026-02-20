@@ -16,6 +16,45 @@ public class LoginSteps extends BaseClass {
  login log;
  WebDriver driver;
  @Given("User is on the login page")
+ 
+ 
+ 
+ 
+ 
+ @Given("user is on the login page")
+ public void user_is_on_the_login_page() {
+     // Write code here that turns the phrase above into concrete actions
+     throw new io.cucumber.java.PendingException();
+ }
+
+ @When("user enter username {string} into username field")
+ public void user_enter_username_into_username_field(String string) {
+     // Write code here that turns the phrase above into concrete actions
+     throw new io.cucumber.java.PendingException();
+ }
+
+ @When("user enter password {string} into password field")
+ public void user_enter_password_into_password_field(String string) {
+     // Write code here that turns the phrase above into concrete actions
+     throw new io.cucumber.java.PendingException();
+ }
+
+ @Then("user should see homepage")
+ public void user_should_see_homepage() {
+     // Write code here that turns the phrase above into concrete actions
+     throw new io.cucumber.java.PendingException();
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  public void user_is_on_the_login_page() throws InterruptedException {
 	 //driver = Helper.getDriver();
      //driver = initializeBrowser("chrome");
