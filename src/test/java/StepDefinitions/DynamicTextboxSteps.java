@@ -23,7 +23,8 @@ public class DynamicTextboxSteps {
     }
 
     @Then("user enters text into textbox1")
-    public void enter_text() {
+    public void enter_text() throws InterruptedException {
+    	Thread.sleep(9000);
         page.enterText(); // ❌ FAILS here
     }
 }

@@ -1,6 +1,7 @@
 package StepDefinitions;
 
 import io.cucumber.java.en.*;
+import utils.DriverFactory;
 import io.cucumber.datatable.DataTable;
 //import PageObjects.reg_new;
 import PageObjects.reg_new;
@@ -10,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.*;
 
-public class Reg_new {
+public class Reg_new extends BaseClass{
 	
 
 	   WebDriver driver;
@@ -20,6 +21,7 @@ public class Reg_new {
 
     @Given("User launches the browser")
     public void launch_browser() {
+    	driver =DriverFactory.getDriver();
         driver.manage().window().maximize();
     }
 
@@ -102,6 +104,7 @@ public class Reg_new {
 
     @Then("All users should be registered successfully")
     public void all_users_should_be_registered_successfully() {
+    	takescrenshot()
         System.out.println("✅ Multiple user registration successful.");
     }
 }

@@ -1,4 +1,4 @@
-@regf
+@smoke
 Feature: User Registration
 
   Scenario: Successful user registration
