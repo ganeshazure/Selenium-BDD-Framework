@@ -6,12 +6,12 @@ import utils.DriverFactory;
 
 public class Hooks {
 
-    @Before
+    @Before// this method will be executed before every scenario
     public void setUp() {
         DriverFactory.initDriver();
     }
 
-    @After
+    @After // this method will be executed After every scenario
     public void tearDown() {
         DriverFactory.quitDriver();
     }
