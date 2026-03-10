@@ -104,7 +104,7 @@ public class Reg_new extends BaseClass{
 
     @Then("All users should be registered successfully")
     public void all_users_should_be_registered_successfully() {
-    	takescrenshot()
-        System.out.println("✅ Multiple user registration successful.");
+        System.out.println("✅ Multiple users registration successful.");
+
     }
 }
