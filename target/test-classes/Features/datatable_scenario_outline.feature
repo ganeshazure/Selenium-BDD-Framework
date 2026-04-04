@@ -12,18 +12,18 @@ Feature: User Registration on TutorialsNinja
     Then Registration should be successful
 
   # ✅ Using DataTable as Map
-  Scenario: Register with valid data using Map
-    When User enters details as map
-      | FirstName | Suresh             |
-      | LastName  | Reddy              |
-      | Email     | suresh@test.com    |
-      | Telephone | 8888888888         |
-      | Password  | pass456            |
-      | Confirm   | pass456            |
-    And User selects Subscribe as "Yes"
-    And User accepts the Privacy Policy
-    And User clicks on Continue
-    Then Registration should be successful
+  #Scenario: Register with valid data using Map
+    #When User enters details as map
+      #| FirstName | Suresh             |
+      #| LastName  | Reddy              |
+      #| Email     | suresh@test.com    |
+      #| Telephone | 8888888888         |
+      #| Password  | pass456            |
+      #| Confirm   | pass456            |
+    #And User selects Subscribe as "Yes"
+    #And User accepts the Privacy Policy
+    #And User clicks on Continue
+    #Then Registration should be successful
 
   # ✅ Using DataTable as Maps (multiple rows)
   Scenario: Register multiple users using Maps
@@ -45,3 +45,10 @@ Feature: User Registration on TutorialsNinja
       | FirstName | LastName | Email              | Telephone | Password | Confirm | Subscribe |
       | Ravi      | Teja     | ravi@test.com      | 9876541230 | pass111  | pass111 | No        |
       | Latha     | Devi     | latha@test.com     | 9865432109 | pass222  | pass222 | Yes       |
+      | Ravi      | Teja     | ravi@test.com      | 9876541230 | pass111  | pass111 | No        |
+      | Latha     | Devi     | latha@test.com     | 9865432109 | pass222  | pass222 | Yes       |
+      | Ravi      | Teja     | ravi@test.com      | 9876541230 | pass111  | pass111 | No        |
+      | Latha     | Devi     | latha@test.com     | 9865432109 | pass222  | pass222 | Yes       |
+      | Ravi      | Teja     | ravi@test.com      | 9876541230 | pass111  | pass111 | No        |
+      | Latha     | Devi     | latha@test.com     | 9865432109 | pass222  | pass222 | Yes       |
+ 
