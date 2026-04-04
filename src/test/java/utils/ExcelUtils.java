@@ -9,7 +9,7 @@ public class ExcelUtils {
     public static String getCellData(String sheetName, int rowNum, int colNum) {
         try {
             FileInputStream fis = new FileInputStream(
-                "src/test/resources/testdata/LoginData.xlsx"
+                "src/test/resources/testdata/Testdata.xlsx"
             );
 
             Workbook workbook = new XSSFWorkbook(fis);
