@@ -1,4 +1,4 @@
-@dyanmic
+@dynamic
 Feature: Dynamic textbox handling
 
   Scenario: Validate entering text into dynamically loaded textbox

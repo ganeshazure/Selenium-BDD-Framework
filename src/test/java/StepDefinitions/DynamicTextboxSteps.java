@@ -13,7 +13,12 @@ public class DynamicTextboxSteps {
 
     @Given("user opens dynamic textbox page")
     public void open_page() {
-        driver.get("https://www.hyrtutorials.com/p/waits-demo.html"); // update path
+
+        WebDriver driver = DriverFactory.getDriver();
+        System.out.println("URL from properties: " +
+                DriverFactory.getProperties().getProperty("url"));
+        driver.get(DriverFactory.getProperties().getProperty("url"));
+
         page = new DynamicPage_NoAjax(driver);
     }
 

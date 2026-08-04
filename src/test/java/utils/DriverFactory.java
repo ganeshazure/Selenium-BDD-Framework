@@ -16,24 +16,25 @@ public class DriverFactory {
 
         if (driver == null) {
 
-            prop = ConfigReader.intializeProperties();
+            prop = ConfigReader.initializeProperties();
             String browser = prop.getProperty("browser");
 
             switch (browser.toLowerCase()) {
-                case "chrome":
-                    driver = new ChromeDriver();
-                    break;
 
-                case "firefox":
-                    driver = new FirefoxDriver();
-                    break;
+            case "chrome":
+                driver = new ChromeDriver();
+                break;
 
-                case "edge":
-                    driver = new EdgeDriver();
-                    break;
+            case "firefox":
+                driver = new FirefoxDriver();
+                break;
 
-                default:
-                    throw new RuntimeException("Invalid browser: " + browser);
+            case "edge":
+                driver = new EdgeDriver();
+                break;
+
+            default:
+                throw new RuntimeException("Invalid browser: " + browser);
             }
 
             driver.manage().window().maximize();
@@ -49,5 +50,9 @@ public class DriverFactory {
             driver.quit();
             driver = null;
         }
+    }
+
+    public static Properties getProperties() {
+        return prop;
     }
 }

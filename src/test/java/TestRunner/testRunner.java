@@ -6,12 +6,12 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-features="src/test/resources/features",
+features="src/test/resources/Features",
 glue ={"StepDefinitions","hooks"},
 plugin= {"pretty","html:target/CucumberReports/CucumberReport.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-tags= "@reg_new"
+tags= "@dynamic"
 )
 
 public class testRunner {
