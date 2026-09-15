@@ -1,5 +1,5 @@
 @log
-Feature: login
+Feature: login feature
 
 Scenario: Validating the Login functionality with valid credentials
     Given User is on the login page
