@@ -11,7 +11,7 @@ glue ={"StepDefinitions","hooks"},
 plugin= {"pretty","html:target/CucumberReports/CucumberReport.html",
 		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-tags= "@dynamic"
+tags = "@reg_excel"
 )
 
 public class testRunner {

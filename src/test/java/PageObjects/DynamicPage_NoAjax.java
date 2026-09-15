@@ -14,7 +14,7 @@ public class DynamicPage_NoAjax {
     @FindBy(id = "btn1")
     WebElement addTextbox1Btn;
 
-    @FindBy(id = "txt1")   // ❌ Element NOT present initially
+    @FindBy(id = "txt")   // ❌ Element NOT present initially
     WebElement textbox1;
 
     public DynamicPage_NoAjax(WebDriver driver) {

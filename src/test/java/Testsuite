@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+  
+  <groups>
+  <run>
+  <include name="reg"/>
+  </run>
+  </groups>
+  
+    <classes>
+       <class name="Testng.NewtestNGclass"/>
+       <class name="Testng.Newtestngclass2"/>
+      <class name="Testng.Allannotaion"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+

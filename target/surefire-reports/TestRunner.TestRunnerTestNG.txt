@@ -1,18 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRunnerTestNG
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.523 s <<< FAILURE! - in TestRunner.TestRunnerTestNG
-runScenario(TestRunner.TestRunnerTestNG)  Time elapsed: 1.491 s  <<< FAILURE!
-org.openqa.selenium.remote.NoSuchDriverException: 
-Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\LENOVO\AppData\Local\Temp\selenium-manager102940368359520014656154445903359895\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_151_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: EdgeDriver
-Caused by: org.openqa.selenium.WebDriverException: 
-Command failed with code: 65, executed: [C:\Users\LENOVO\AppData\Local\Temp\selenium-manager102940368359520014656154445903359895\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_151_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
-Build info: version: '4.11.0', revision: '040bc5406b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: driver.version: EdgeDriver
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.65 s <<< FAILURE! -- in TestRunner.TestRunnerTestNG
+TestRunner.TestRunnerTestNG.runScenario["User fills out the form and submits it", "Registration"](1) -- Time elapsed: 14.37 s <<< FAILURE!
+java.lang.AssertionError: expected [Ganesh] but found [Ganes]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at StepDefinitions.Reg_excel.verify_account_page(Reg_excel.java:101)
+	at ✽.I should see the account page(file:///C:/Users/LENOVO/eclipse-workspace/BddTest/src/test/resources/Features/reg/Register_with_excel.feature:11)
 

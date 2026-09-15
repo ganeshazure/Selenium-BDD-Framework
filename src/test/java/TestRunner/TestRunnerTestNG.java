@@ -10,8 +10,7 @@ import io.cucumber.testng.CucumberOptions;
         "pretty",
         "html:target/CucumberReports/CucumberReport.html",
         "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-    },
-    tags = "@dynamic"
+    }
 )
 
 public class TestRunnerTestNG extends AbstractTestNGCucumberTests {

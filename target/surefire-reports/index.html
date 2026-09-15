@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner.TestRunnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;Validate entering text into dynamically loaded textbox&quot;, &quot;Dynamic textbox handling&quot;)">runScenario("Validate entering text into dynamically loaded textbox", "Dynamic textbox handling")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner.TestRunnerTestNG" class="method navigator-link" hash-for-method="runScenario(&quot;User fills out the form and submits it&quot;, &quot;Registration&quot;)">runScenario("User fills out the form and submits it", "Registration")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -126,59 +126,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate entering text into dynamically loaded textbox&quot;, &quot;Dynamic textbox handling&quot;)">
-                  </a> <!-- runScenario("Validate entering text into dynamically loaded textbox", "Dynamic textbox handling") -->
+                  <a name="runScenario(&quot;User fills out the form and submits it&quot;, &quot;Registration&quot;)">
+                  </a> <!-- runScenario("User fills out the form and submits it", "Registration") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate entering text into dynamically loaded textbox","Dynamic textbox handling")</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: Capabilities {browserName: MicrosoftEdge, ms:edgeOptions: {args: [--remote-allow-origins=*], extensions: []}}, error Command failed with code: 65, executed: [C:\Users\LENOVO\AppData\Local\Temp\selenium-manager102940368359520014656154445903359895\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_151_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:25)
-	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
-	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
-	at utils.DriverFactory.initDriver(DriverFactory.java:33)
-	at hooks.Hooks.setUp(Hooks.java:11)
-Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [C:\Users\LENOVO\AppData\Local\Temp\selenium-manager102940368359520014656154445903359895\selenium-manager.exe, --browser, MicrosoftEdge, --output, json]
-error sending request for url (https://msedgedriver.azureedge.net/LATEST_RELEASE_151_WINDOWS): error trying to connect: dns error: No such host is known. (os error 11001)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
-Driver info: driver.version: EdgeDriver
-	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:151)
-	at org.openqa.selenium.manager.SeleniumManager.getDriverPath(SeleniumManager.java:273)
-	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:22)
-	at org.openqa.selenium.remote.service.DriverFinder.getPath(DriverFinder.java:13)
-	at org.openqa.selenium.edge.EdgeDriver.generateExecutor(EdgeDriver.java:71)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:60)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:56)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:48)
-	at org.openqa.selenium.edge.EdgeDriver.&lt;init&gt;(EdgeDriver.java:44)
-	at utils.DriverFactory.initDriver(DriverFactory.java:33)
-	at hooks.Hooks.setUp(Hooks.java:11)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+                  <span class="parameters">("User fills out the form and submits it","Registration")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Ganesh] but found [Ganes]
+	at StepDefinitions.Reg_excel.verify_account_page(Reg_excel.java:101)
+	at ✽.I should see the account page(file:///C:/Users/LENOVO/eclipse-workspace/BddTest/src/test/resources/Features/reg/Register_with_excel.feature:11)
+... Removed 6 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
@@ -194,8 +149,8 @@ Driver info: driver.version: EdgeDriver
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestRunner.TestRunnerTestNG&quot;/&gt;
     &lt;/classes&gt;
@@ -249,12 +204,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'TestRunner.TestRunnerTestNG')
-data.setCell(0, 3, 1484);
+data.setCell(0, 3, 14345);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -282,18 +237,18 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestRunner.TestRunnerTestNG</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@476ee5b3)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6cd45b6c)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Validate entering text into dynamically loaded textbox", "Dynamic textbox handling")</span>
-                <span class="method-start">888 ms</span>
+                <span class="method-name">runScenario("User fills out the form and submits it", "Registration")</span>
+                <span class="method-start">1428 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">2379 ms</span>
+                <span class="method-start">15801 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

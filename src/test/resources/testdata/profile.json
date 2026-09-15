@@ -1,0 +1,97 @@
+{
+    "status": "success",
+    "timestamp": "2025-12-07T10:45:00Z",
+    "user": {
+        "id": 101,
+        "name": "Ganesh Kumar",
+        "email": "ganesh@example.com",
+        "profile": {
+            "age": 29,
+            "gender": "male",
+            "phones": [
+                {
+                    "type": "mobile",
+                    "number": "+91-9876543210",
+                    "primary": true
+                },
+                {
+                    "type": "office",
+                    "number": "+91-040-22223333",
+                    "primary": false
+                }
+            ],
+            "address": {
+                "current": {
+                    "street": "Madhapur Road",
+                    "city": "Hyderabad",
+                    "pincode": 500081,
+                    "geo": {
+                        "lat": 17.444,
+                        "lng": 78.377
+                    }
+                },
+                "permanent": {
+                    "street": "MG Road",
+                    "city": "Warangal",
+                    "pincode": 506001
+                }
+            }
+        }
+    },
+    "orders": [
+        {
+            "orderId": 5001,
+            "orderDate": "2025-11-28",
+            "amount": 1999.4,
+            "items": [
+                {
+                    "itemId": 1,
+                    "name": "Laptop Bag",
+                    "qty": 1,
+                    "price": 999.5
+                },
+                {
+                    "itemId": 2,
+                    "name": "Mouse",
+                    "qty": 2,
+                    "price": 499.95
+                }
+            ],
+            "status": {
+                "paid": true,
+                "shipped": false,
+                "deliveryDate": null
+            }
+        },
+        {
+            "orderId": 5002,
+            "orderDate": "2025-12-01",
+            "amount": 599.99,
+            "items": [
+                {
+                    "itemId": 3,
+                    "name": "Keyboard",
+                    "qty": 1,
+                    "price": 599.99
+                }
+            ],
+            "status": {
+                "paid": true,
+                "shipped": true,
+                "deliveryDate": "2025-12-05"
+            }
+        }
+    ],
+    "settings": {
+        "notifications": {
+            "email": true,
+            "sms": false,
+            "push": true
+        },
+        "theme": "dark",
+        "languages": [
+            "English",
+            "Telugu"
+        ]
+    }
+}
