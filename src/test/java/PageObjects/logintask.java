@@ -6,5 +6,6 @@ public class logintask {
     int y=20;       
     int z= x+y;
     return z;
+    //modified
     
 }
