@@ -37,4 +37,4 @@ jobs:
             ${{ runner.os }}-m2
 
       - name: Run Tests
-        run: mvn clean test -Denv=qa -Dcucumber.filter.tags="@dynamic"
+        run: mvn clean test -Denv=qa -Dcucumber.filter.tags="@Sau_demo_login"
