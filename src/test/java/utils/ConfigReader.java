@@ -1,7 +1,8 @@
 package utils;
 
-import java.io.File;
 import java.io.FileInputStream;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 public class ConfigReader {
@@ -20,14 +21,24 @@ public class ConfigReader {
 
         System.out.println("Running in Environment : " + env);
 
-        String path = System.getProperty("user.dir")
-                + "\\src\\main\\resources\\config\\config-" + env + ".properties";
+        Path path = Paths.get(
+                System.getProperty("user.dir"),
+                "src",
+                "main",
+                "resources",
+                "config",
+                "config-" + env + ".properties"
+        );
 
         try {
-            FileInputStream fis = new FileInputStream(new File(path));
+            FileInputStream fis = new FileInputStream(path.toFile());
             prop.load(fis);
+            fis.close();
+
         } catch (Exception e) {
-            throw new RuntimeException("Unable to load config file : " + path, e);
+            throw new RuntimeException(
+                    "Unable to load config file : " + path, e
+            );
         }
 
         return prop;
