@@ -53,7 +53,7 @@ jobs:
       # 5. Run Selenium Cucumber tests
       - name: Run Tests
         run: |
-          mvn test -Denv=qa -Dcucumber.filter.tags="@textbox"
+          mvn test -Denv=qa -Dcucumber.filter.tags="@Sau_demo_login"
 
       # 6. Show generated files
       # This is useful to confirm that ExtentReport.html exists
