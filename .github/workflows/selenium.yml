@@ -50,12 +50,20 @@ jobs:
           google-chrome --version
           chromedriver --version
 
-      # 5. Run Selenium Cucumber Tests
+      # 5. Run Selenium Cucumber tests
       - name: Run Tests
         run: |
           mvn test -Denv=qa -Dcucumber.filter.tags="@textbox"
 
-      # 6. Upload Extent Report as GitHub Actions Artifact
+      # 6. Show generated files
+      # This is useful to confirm that ExtentReport.html exists
+      - name: Check Test Reports
+        if: always()
+        run: |
+          echo "===== TARGET DIRECTORY ====="
+          find target -type f | sort
+
+      # 7. Upload Extent Report to GitHub Actions
       - name: Upload Extent Report
         if: always()
         uses: actions/upload-artifact@v4
@@ -63,19 +71,29 @@ jobs:
           name: ExtentReport
           path: target/ExtentReport/
 
-      # 7. Prepare report for GitHub Pages
+      # 8. Prepare GitHub Pages
+      # IMPORTANT:
+      # ExtentReport.html is renamed to index.html
+      # so the report opens directly from the root URL.
       - name: Prepare GitHub Pages Report
         if: always()
         run: |
           mkdir -p pages
-          cp -r target/ExtentReport/* pages/
+          cp target/ExtentReport/ExtentReport.html pages/index.html
 
-      # 8. Upload report to GitHub Pages
+      # 9. Check Pages folder
+      - name: Check Pages Folder
+        if: always()
+        run: |
+          echo "===== PAGES DIRECTORY ====="
+          find pages -type f -maxdepth 2 -print
+
+      # 10. Upload Pages artifact
       - name: Upload Pages Artifact
         if: always()
         uses: actions/upload-pages-artifact@v4
         with:
-          path: pages/
+          path: pages
 
 
   deploy:
@@ -89,9 +107,77 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+
     steps:
 
-      # 9. Deploy report to GitHub Pages
+      # 11. Deploy report to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+
+  email:
+
+    if: always()
+    needs:
+      - selenium-test
+      - deploy
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # 12. Send email
+      - name: Send Test Report Email
+        uses: jiacai/sendmail-action@v1
+        with:
+          smtp_url: 'smtps://smtp.gmail.com:465'
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: ${{ secrets.MAIL_USERNAME }}
+          to: ${{ secrets.MAIL_TO }}
+          subject: 'Selenium BDD Automation Test Report'
+          html_body: |
+            <html>
+            <body>
+
+              <h2>Selenium BDD Automation Report</h2>
+
+              <p>
+                <b>Repository:</b>
+                ${{ github.repository }}
+              </p>
+
+              <p>
+                <b>Branch:</b>
+                ${{ github.ref_name }}
+              </p>
+
+              <p>
+                <b>Test Tag:</b>
+                @textbox
+              </p>
+
+              <p>
+                <b>Test Job Status:</b>
+                ${{ needs.selenium-test.result }}
+              </p>
+
+              <p>
+                <b>Report:</b>
+                <a href="${{ needs.deploy.outputs.page_url }}">
+                  Open Selenium Extent Report
+                </a>
+              </p>
+
+              <p>
+                <b>GitHub Actions Run:</b>
+                <a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">
+                  Open Workflow
+                </a>
+              </p>
+
+            </body>
+            </html>
