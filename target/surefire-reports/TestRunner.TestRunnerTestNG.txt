@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner.TestRunnerTestNG
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 20.56 s <<< FAILURE! -- in TestRunner.TestRunnerTestNG
-TestRunner.TestRunnerTestNG.runScenario["User fills out the form and submits it", "Registration"](1) -- Time elapsed: 17.72 s <<< FAILURE!
-java.lang.AssertionError: expected [Ganesh] but found [Ganes]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at StepDefinitions.Reg_excel.verify_account_page(Reg_excel.java:101)
-	at ✽.I should see the account page(file:///C:/Users/LENOVO/eclipse-workspace/BddTest/src/test/resources/Features/reg/Register_with_excel.feature:11)
-
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.74 s -- in TestRunner.TestRunnerTestNG
