@@ -2,26 +2,26 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-09-07T19:31:07 IST" name="Surefire suite" finished-at="2026-09-07T19:31:24 IST" duration-ms="16611">
+  <suite started-at="2026-10-06T22:29:02 IST" name="Surefire suite" finished-at="2026-10-06T22:29:22 IST" duration-ms="19704">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-09-07T19:31:07 IST" name="Surefire test" finished-at="2026-09-07T19:31:24 IST" duration-ms="16611">
+    <test started-at="2026-10-06T22:29:02 IST" name="Surefire test" finished-at="2026-10-06T22:29:22 IST" duration-ms="19704">
       <class name="TestRunner.TestRunnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-09-07T19:31:07 IST" name="setUpClass" finished-at="2026-09-07T19:31:09 IST" duration-ms="1407" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-10-06T22:29:02 IST" name="setUpClass" finished-at="2026-10-06T22:29:04 IST" duration-ms="1284" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6cd45b6c]]>
+                <![CDATA[org.testng.TestRunner@671d97bc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-09-07T19:31:09 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-07T19:31:23 IST" duration-ms="14345" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-10-06T22:29:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-10-06T22:29:21 IST" duration-ms="17713" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@ at ✽.I should see the account page(file:///C:/Users/LENOVO/eclipse-workspace/B
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-09-07T19:31:23 IST" name="tearDownClass" finished-at="2026-09-07T19:31:24 IST" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunnerTestNG@3bb9a3ff]" started-at="2026-10-06T22:29:21 IST" name="tearDownClass" finished-at="2026-10-06T22:29:22 IST" duration-ms="634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
