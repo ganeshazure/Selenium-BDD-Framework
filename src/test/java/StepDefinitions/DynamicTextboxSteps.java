@@ -15,10 +15,10 @@ public class DynamicTextboxSteps {
     public void open_page() {
 
         WebDriver driver = DriverFactory.getDriver();
-        System.out.println("URL from properties: " +
-                DriverFactory.getProperties().getProperty("url"));
-        driver.get(DriverFactory.getProperties().getProperty("url"));
-
+//        System.out.println("URL from properties: " +
+//               DriverFactory.getProperties().getProperty("url"));
+////        driver.get(DriverFactory.getProperties().getProperty("url"));
+driver.get("https://www.hyrtutorials.com/p/waits-demo.html");
         page = new DynamicPage_NoAjax(driver);
     }
 
