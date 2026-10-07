@@ -33,7 +33,7 @@ public class DriverFactory {
                 options.addArguments("--disable-gpu");
 
                 driver = new ChromeDriver(options);
-
+//comment
                 break;
 
             case "firefox":
